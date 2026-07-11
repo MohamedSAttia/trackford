@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التسجيل في دورة P3O® Foundation | برعاية TRACKFORD</title>
+<meta name="description" content="سجّل الآن في دورة P3O® Foundation المجانية برعاية TRACKFORD، تقديم د. محمد عطية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   TRACKFORD — P3O® Foundation — نموذج التسجيل
+   الألوان: بنفسجي ملكي + ذهبي
+   ========================================================= */
+
+:root{
+  --purple-deep:#2A0E52;
+  --purple:#4A1F82;
+  --purple-light:#7C4DBC;
+  --purple-soft:#EFE7FA;
+  --gold:#C9A227;
+  --gold-light:#E9CC6E;
+  --gold-deep:#9C7D16;
+  --cream:#FBF7EF;
+  --ink:#1D1029;
+  --ink-soft:#5A4C6E;
+  --white:#FFFFFF;
+  --danger:#B3261E;
+  --success:#1E7A46;
+  --radius:16px;
+  --shadow:0 12px 32px rgba(42,14,82,.14);
+  --font-display:'Cairo', sans-serif;
+  --font-body:'Tajawal', sans-serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  background:var(--cream);
+  color:var(--ink);
+  direction:rtl;
+  text-align:right;
+  line-height:1.7;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+:focus-visible{outline:3px solid var(--gold-deep);outline-offset:2px;}
+
+.container{
+  width:100%;
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* ---------- Ornamental divider (signature element) ---------- */
+.ornament{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:8px auto 32px;
+  color:var(--gold-deep);
+}
+.ornament::before,
+.ornament::after{
+  content:"";
+  height:1px;
+  width:64px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.ornament svg{width:26px;height:26px;}
+
+/* ---------- Header ---------- */
+.site-header{
+  background:var(--purple-deep);
+  color:var(--white);
+  padding:16px 0;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 2px 16px rgba(0,0,0,.18);
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:1.05rem;
+  letter-spacing:.3px;
+}
+.brand-mark{
+  width:42px;height:42px;
+  border-radius:10px;
+  background:linear-gradient(145deg, var(--gold-light), var(--gold-deep));
+  display:flex;align-items:center;justify-content:center;
+  color:var(--purple-deep);
+  font-weight:900;
+  font-family:var(--font-display);
+  overflow:hidden;
+  flex-shrink:0;
+}
+.brand-mark img{width:100%;height:100%;object-fit:contain;padding:4px;}
+.brand-mark-fallback{font-size:.7rem;letter-spacing:.5px;}
+.brand small{
+  display:block;
+  font-weight:400;
+  font-size:.72rem;
+  color:var(--gold-light);
+  font-family:var(--font-body);
+}
+.sponsor-badge{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  padding:6px 14px 6px 10px;
+  border-radius:999px;
+  font-size:.78rem;
+  color:rgba(255,255,255,.75);
+}
+.sponsor-badge img{
+  height:20px;
+  max-width:88px;
+  object-fit:contain;
+}
+.sponsor-badge strong{
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-size:.82rem;
+}
+@media (max-width:640px){
+  .sponsor-badge{order:3;width:100%;justify-content:center;}
+}
+.header-cta{
+  background:var(--gold);
+  color:var(--purple-deep);
+  font-weight:800;
+  padding:10px 20px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:.9rem;
+  transition:transform .15s ease, box-shadow .15s ease;
+  white-space:nowrap;
+}
+.header-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,162,39,.35);}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(1200px 400px at 20% -10%, rgba(255,255,255,.08), transparent),
+    linear-gradient(160deg, var(--purple-deep) 0%, var(--purple) 55%, var(--purple-light) 130%);
+  color:var(--white);
+  padding:56px 0 72px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(201,162,39,.05) 0 2px, transparent 2px 26px),
+    repeating-linear-gradient(-45deg, rgba(201,162,39,.05) 0 2px, transparent 2px 26px);
+  pointer-events:none;
+}
+.hero .container{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:40px;
+  align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(233,204,110,.45);
+  color:var(--gold-light);
+  padding:6px 14px;
+  border-radius:999px;
+  font-size:.82rem;
+  font-weight:700;
+  margin-bottom:18px;
+}
+.hero h1{
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:clamp(2.1rem, 5vw, 3.2rem);
+  margin:0 0 10px;
+  line-height:1.2;
+}
+.hero h1 span{color:var(--gold-light);}
+.hero p.lead{
+  font-size:1.05rem;
+  color:rgba(255,255,255,.85);
+  max-width:46ch;
+  margin:0 0 26px;
+}
+.hero-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:30px;
+}
+.badge{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  padding:9px 14px;
+  border-radius:12px;
+  font-size:.85rem;
+  font-weight:700;
+}
+.badge svg{width:18px;height:18px;flex-shrink:0;color:var(--gold-light);}
+.badge.free{
+  background:linear-gradient(135deg, var(--gold), var(--gold-deep));
+  color:var(--purple-deep);
+  border-color:transparent;
+}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 28px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:1rem;
+  text-decoration:none;
+  cursor:pointer;
+  border:none;
+  transition:transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+  font-family:var(--font-body);
+}
+.btn-gold{
+  background:linear-gradient(135deg, var(--gold-light), var(--gold-deep));
+  color:var(--purple-deep);
+  box-shadow:0 10px 26px rgba(201,162,39,.35);
+}
+.btn-gold:hover{transform:translateY(-2px);}
+.btn-outline{
+  background:transparent;
+  border:1.5px solid rgba(255,255,255,.5);
+  color:var(--white);
+}
+.btn-outline:hover{background:rgba(255,255,255,.1);}
+.btn-purple{
+  background:linear-gradient(135deg, var(--purple-light), var(--purple));
+  color:var(--white);
+  box-shadow:0 10px 22px rgba(74,31,130,.28);
+}
+.btn-purple:hover{transform:translateY(-2px);}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+
+/* Poster */
+.poster-frame{
+  position:relative;
+  border-radius:22px;
+  padding:10px;
+  background:linear-gradient(160deg, var(--gold-light), var(--gold-deep));
+  box-shadow:0 20px 50px rgba(15,4,36,.45);
+  transition:transform .35s ease;
+}
+.poster-frame:hover{transform:translateY(-6px);}
+.poster-frame .poster-inner{
+  border-radius:16px;
+  overflow:hidden;
+  background:
+    radial-gradient(120% 120% at 50% 0%, rgba(255,255,255,.08), transparent 60%),
+    var(--purple-deep);
+  aspect-ratio:3/4;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.poster-inner img{width:100%;height:100%;object-fit:contain;}
+.poster-ribbon{
+  position:absolute;
+  top:22px;
+  inset-inline-start:-8px;
+  background:linear-gradient(135deg, var(--purple), var(--purple-deep));
+  color:var(--gold-light);
+  font-size:.74rem;
+  font-weight:800;
+  padding:7px 16px;
+  border-radius:0 999px 999px 0;
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  z-index:2;
+}
+
+/* Seats counter */
+.seats-counter{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(233,204,110,.35);
+  border-radius:14px;
+  padding:14px 18px;
+  margin-bottom:26px;
+  max-width:420px;
+}
+.seats-counter-icon{
+  width:40px;height:40px;
+  border-radius:10px;
+  background:linear-gradient(135deg, var(--gold-light), var(--gold-deep));
+  color:var(--purple-deep);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.seats-counter-icon svg{width:20px;height:20px;}
+.seats-counter-text{font-size:.85rem;color:rgba(255,255,255,.85);}
+.seats-counter-text strong{color:var(--gold-light);font-family:var(--font-display);font-size:1rem;}
+.seats-progress{
+  margin-top:7px;
+  height:6px;
+  width:100%;
+  min-width:180px;
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+  overflow:hidden;
+}
+.seats-progress-bar{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius:999px;
+  transition:width .6s ease;
+}
+.poster-fallback{
+  color:var(--gold-light);
+  text-align:center;
+  padding:24px;
+  font-family:var(--font-display);
+}
+.poster-fallback .p3o-mark{
+  font-size:3rem;
+  font-weight:900;
+  color:var(--white);
+  margin-bottom:6px;
+}
+.poster-fallback small{
+  display:block;
+  color:rgba(255,255,255,.7);
+  font-family:var(--font-body);
+  margin-top:10px;
+  font-size:.8rem;
+}
+
+/* ---------- Section headings ---------- */
+.section{padding:64px 0;}
+.section-head{text-align:center;max-width:640px;margin:0 auto 8px;}
+.section-eyebrow{
+  color:var(--gold-deep);
+  font-weight:800;
+  font-size:.85rem;
+  letter-spacing:.4px;
+}
+.section-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.6rem, 3.4vw, 2.1rem);
+  font-weight:800;
+  color:var(--purple-deep);
+  margin:6px 0 10px;
+}
+.section-sub{color:var(--ink-soft);font-size:1rem;}
+
+/* ---------- Details grid ---------- */
+.details-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:18px;
+  margin-top:36px;
+}
+.detail-card{
+  background:var(--white);
+  border:1px solid rgba(74,31,130,.08);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.detail-card .icon{
+  width:52px;height:52px;
+  border-radius:14px;
+  background:var(--purple-soft);
+  color:var(--purple);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 14px;
+}
+.detail-card .icon svg{width:26px;height:26px;}
+.detail-card h3{
+  font-family:var(--font-display);
+  font-size:1rem;
+  margin:0 0 6px;
+  color:var(--purple-deep);
+}
+.detail-card p{margin:0;color:var(--ink-soft);font-size:.92rem;}
+
+/* ---------- Form ---------- */
+.form-wrap{
+  background:var(--white);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  padding:clamp(20px, 4vw, 44px);
+  max-width:760px;
+  margin:36px auto 0;
+  border:1px solid rgba(74,31,130,.08);
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field.full{grid-column:1/-1;}
+.field label{font-weight:700;font-size:.88rem;color:var(--purple-deep);}
+.field label .req{color:var(--danger);}
+.field input,
+.field select{
+  padding:13px 14px;
+  border:1.5px solid #E4DCF2;
+  border-radius:10px;
+  font-family:var(--font-body);
+  font-size:.95rem;
+  background:var(--cream);
+  color:var(--ink);
+  transition:border-color .15s ease, box-shadow .15s ease;
+}
+.field input:focus,
+.field select:focus{
+  border-color:var(--purple-light);
+  box-shadow:0 0 0 4px rgba(124,77,188,.15);
+  outline:none;
+}
+.field .error-msg{
+  color:var(--danger);
+  font-size:.78rem;
+  min-height:1em;
+}
+.field.has-error input,
+.field.has-error select{border-color:var(--danger);}
+
+.form-submit{
+  margin-top:8px;
+  width:100%;
+}
+.form-alert{
+  margin-top:16px;
+  padding:14px 16px;
+  border-radius:10px;
+  font-size:.9rem;
+  font-weight:700;
+  display:none;
+}
+.form-alert.show{display:block;}
+.form-alert.error{background:#FCE9E7;color:var(--danger);}
+.form-alert.warn{background:#FFF4DE;color:#8A5A00;}
+
+/* Success card */
+.success-card{
+  display:none;
+  text-align:center;
+  padding:20px 6px 6px;
+}
+.success-card.show{display:block;}
+.success-card .check{
+  width:74px;height:74px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--gold-light), var(--gold-deep));
+  color:var(--purple-deep);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;
+}
+.success-card .check svg{width:38px;height:38px;}
+.success-card h3{
+  font-family:var(--font-display);
+  color:var(--purple-deep);
+  font-size:1.4rem;
+  margin:0 0 8px;
+}
+.success-card p{color:var(--ink-soft);margin:0 0 18px;}
+.reg-number{
+  display:inline-block;
+  background:var(--purple-soft);
+  color:var(--purple-deep);
+  font-family:var(--font-display);
+  font-weight:800;
+  letter-spacing:1px;
+  padding:12px 24px;
+  border-radius:12px;
+  font-size:1.15rem;
+  margin-bottom:18px;
+}
+.success-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:8px;
+}
+.btn-outline-purple{
+  background:var(--white);
+  border:1.5px solid var(--purple-soft);
+  color:var(--purple-deep);
+  font-size:.88rem;
+  padding:12px 20px;
+}
+.btn-outline-purple svg{width:18px;height:18px;}
+.btn-outline-purple:hover{background:var(--purple-soft);transform:translateY(-2px);}
+.btn-whatsapp{
+  background:#25D366;
+  color:#fff;
+  font-size:.9rem;
+  padding:13px 22px;
+  border:none;
+}
+.btn-whatsapp svg{width:18px;height:18px;}
+.btn-whatsapp:hover{transform:translateY(-2px);filter:brightness(1.05);}
+.whatsapp-join-card{
+  margin-top:18px;
+  padding:18px;
+  border-radius:14px;
+  background:#EAFBF1;
+  border:1.5px dashed #25D366;
+  text-align:center;
+}
+.whatsapp-join-card p{margin:0 0 12px;font-size:.9rem;color:#146C43;font-weight:700;}
+
+/* ---------- إفادة التسجيل القابلة للطباعة ---------- */
+.print-certificate{display:none;}
+@media print{
+  body *{visibility:hidden;}
+  .print-certificate, .print-certificate *{visibility:visible;}
+  .print-certificate{
+    display:block;
+    position:absolute;
+    inset:0;
+    padding:40px;
+  }
+  .cert-border{
+    border:3px solid #C9A227;
+    border-radius:12px;
+    padding:40px;
+    height:100%;
+  }
+  .cert-header{display:flex;align-items:center;gap:16px;margin-bottom:24px;}
+  .cert-logo{
+    width:60px;height:60px;border-radius:12px;
+    background:linear-gradient(145deg,#E9CC6E,#9C7D16);
+    color:#2A0E52;font-family:var(--font-display);font-weight:900;
+    display:flex;align-items:center;justify-content:center;font-size:1rem;
+  }
+  .cert-org{font-family:var(--font-display);font-weight:800;color:#2A0E52;font-size:1.1rem;}
+  .cert-sub{color:#5A4C6E;font-size:.85rem;}
+  .cert-title{
+    font-family:var(--font-display);color:#2A0E52;
+    text-align:center;font-size:1.6rem;margin:20px 0;
+  }
+  .cert-body{font-size:1rem;line-height:1.9;color:#1D1029;margin-bottom:24px;}
+  .cert-table{width:100%;border-collapse:collapse;margin-bottom:24px;}
+  .cert-table td{
+    padding:10px 14px;border:1px solid #E4DCF2;font-size:.92rem;
+  }
+  .cert-table td:first-child{background:#EFE7FA;font-weight:700;width:40%;color:#2A0E52;}
+  .cert-footer{font-size:.8rem;color:#5A4C6E;text-align:center;}
+}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:var(--purple-deep);
+  color:rgba(255,255,255,.75);
+  padding:34px 0;
+  text-align:center;
+  font-size:.85rem;
+}
+.site-footer strong{color:var(--gold-light);}
+.site-footer .admin-link{
+  display:inline-block;
+  margin-top:10px;
+  color:rgba(255,255,255,.45);
+  font-size:.78rem;
+  text-decoration:none;
+}
+.site-footer .admin-link:hover{color:var(--gold-light);}
+
+/* ---------- Light entrance animations ---------- */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(18px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@media (prefers-reduced-motion: no-preference){
+  .hero-eyebrow{animation:fadeUp .6s ease both;}
+  .hero h1{animation:fadeUp .6s ease .08s both;}
+  .hero p.lead{animation:fadeUp .6s ease .16s both;}
+  .hero-badges{animation:fadeUp .6s ease .24s both;}
+  .seats-counter{animation:fadeUp .6s ease .3s both;}
+  .hero-ctas{animation:fadeUp .6s ease .36s both;}
+  .poster-frame{animation:fadeUp .7s ease .2s both;}
+
+  .detail-card{animation:fadeUp .5s ease both;}
+  .detail-card:nth-child(1){animation-delay:.05s;}
+  .detail-card:nth-child(2){animation-delay:.1s;}
+  .detail-card:nth-child(3){animation-delay:.15s;}
+  .detail-card:nth-child(4){animation-delay:.2s;}
+  .detail-card:nth-child(5){animation-delay:.25s;}
+  .detail-card:nth-child(6){animation-delay:.3s;}
+
+  .detail-card{transition:transform .2s ease, box-shadow .2s ease;}
+  .detail-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(42,14,82,.18);}
+
+  .stat-card{transition:transform .2s ease, box-shadow .2s ease;}
+  .stat-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(42,14,82,.16);}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px){
+  .hero .container{grid-template-columns:1fr;}
+  .poster-frame{max-width:320px;margin:0 auto;order:-1;}
+  .form-grid{grid-template-columns:1fr;}
+}
+@media (max-width: 480px){
+  .hero{padding:40px 0 56px;}
+  .section{padding:46px 0;}
+  .hero-ctas{flex-direction:column;align-items:stretch;}
+}
+
+/* ---------- Admin shared ---------- */
+.admin-shell{min-height:100vh;background:var(--cream);}
+.admin-header{
+  background:var(--purple-deep);color:var(--white);
+  padding:16px 0;
+}
+.admin-header .container{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.admin-card{
+  background:var(--white);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+  border:1px solid rgba(74,31,130,.08);
+}
+.login-wrap{
+  max-width:420px;
+  margin:80px auto;
+  padding:0 20px;
+}
+.login-wrap h1{
+  font-family:var(--font-display);
+  color:var(--purple-deep);
+  text-align:center;
+  margin-bottom:6px;
+}
+.login-wrap p{text-align:center;color:var(--ink-soft);margin-top:0;margin-bottom:26px;font-size:.9rem;}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:16px;
+  margin-bottom:24px;
+}
+.stat-card{
+  background:var(--white);
+  border:1px solid rgba(74,31,130,.08);
+  border-radius:var(--radius);
+  padding:20px 22px;
+  box-shadow:var(--shadow);
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.stat-card .icon{
+  width:46px;height:46px;
+  border-radius:12px;
+  background:var(--purple-soft);
+  color:var(--purple);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.stat-card .icon svg{width:22px;height:22px;}
+.stat-card .stat-value{
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:1.5rem;
+  color:var(--purple-deep);
+  line-height:1.2;
+}
+.stat-card .stat-label{font-size:.8rem;color:var(--ink-soft);}
+
+.toolbar{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+.search-box{
+  flex:1;
+  min-width:220px;
+  position:relative;
+}
+.search-box input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1.5px solid #E4DCF2;
+  font-family:var(--font-body);
+  background:var(--white);
+}
+.stat-pill{
+  background:var(--purple-soft);
+  color:var(--purple-deep);
+  font-weight:800;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:.85rem;
+  white-space:nowrap;
+}
+
+.table-wrap{overflow-x:auto;border-radius:14px;border:1px solid #EDE6F8;}
+table{width:100%;border-collapse:collapse;min-width:920px;background:var(--white);}
+thead th{
+  background:var(--purple-soft);
+  color:var(--purple-deep);
+  font-family:var(--font-display);
+  font-size:.82rem;
+  padding:12px 14px;
+  text-align:right;
+  white-space:nowrap;
+  position:sticky;top:0;
+}
+tbody td{
+  padding:12px 14px;
+  font-size:.86rem;
+  border-top:1px solid #F1ECFA;
+  white-space:nowrap;
+}
+tbody tr:hover{background:#FBF9FF;}
+.empty-state{
+  text-align:center;
+  padding:50px 20px;
+  color:var(--ink-soft);
+}
+.spinner{
+  width:34px;height:34px;
+  border-radius:50%;
+  border:3px solid var(--purple-soft);
+  border-top-color:var(--purple);
+  animation:spin .8s linear infinite;
+  margin:20px auto;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ========== معالج التسجيل متعدد الخطوات (Wizard) ========== */
+.wizard-steps{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-bottom:10px;
+}
+.wizard-step{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  min-width:92px;
+  text-align:center;
+}
+.wizard-dot{
+  width:38px;height:38px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:.95rem;
+  background:var(--purple-soft);
+  color:var(--purple);
+  border:2px solid var(--purple-light);
+  transition:all .25s ease;
+}
+.wizard-label{
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--ink-soft);
+  transition:color .25s ease;
+}
+.wizard-step.active .wizard-dot{
+  background:var(--purple);
+  color:#fff;
+  border-color:var(--purple);
+  box-shadow:0 6px 16px rgba(74,31,130,.35);
+  transform:scale(1.08);
+}
+.wizard-step.active .wizard-label{color:var(--purple-deep);}
+.wizard-step.done .wizard-dot{
+  background:var(--success);
+  color:#fff;
+  border-color:var(--success);
+}
+.wizard-step.done .wizard-dot::before{content:"✓";}
+.wizard-step.done .wizard-dot{font-size:0;}
+.wizard-step.done .wizard-dot::before{font-size:1rem;}
+.wizard-line{
+  flex:1;
+  max-width:70px;
+  height:2px;
+  background:linear-gradient(90deg,var(--purple-soft),var(--purple-light));
+  border-radius:2px;
+  margin-bottom:22px;
+}
+.wizard-progress{
+  height:6px;
+  background:var(--purple-soft);
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:26px;
+}
+.wizard-progress-bar{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  border-radius:6px;
+  transition:width .35s ease;
+}
+.wizard-pane{display:none;animation:paneIn .3s ease;}
+.wizard-pane.active{display:block;}
+@keyframes paneIn{
+  from{opacity:0;transform:translateY(8px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.wizard-pane-title{
+  font-family:var(--font-display);
+  font-size:1.05rem;
+  color:var(--purple-deep);
+  margin:0 0 18px;
+  padding-inline-start:12px;
+  border-inline-start:4px solid var(--gold);
+}
+.wizard-nav{
+  display:flex;
+  gap:12px;
+  justify-content:space-between;
+  margin-top:22px;
+  flex-wrap:wrap;
+}
+.wizard-nav .btn{min-width:140px;justify-content:center;}
+.wizard-nav .form-submit{margin-top:0;}
+
+/* بطاقة المراجعة قبل التأكيد */
+.review-card{
+  background:var(--cream);
+  border:1px solid var(--purple-soft);
+  border-radius:var(--radius);
+  padding:6px 18px;
+}
+.review-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  padding:11px 0;
+  border-bottom:1px dashed rgba(74,31,130,.18);
+  font-size:.92rem;
+}
+.review-row:last-child{border-bottom:none;}
+.review-row span{color:var(--ink-soft);font-weight:500;white-space:nowrap;}
+.review-row strong{color:var(--purple-deep);text-align:left;word-break:break-word;}
+.review-hint{
+  font-size:.82rem;
+  color:var(--ink-soft);
+  margin:12px 4px 0;
+}
+
+@media (max-width:560px){
+  .wizard-label{display:none;}
+  .wizard-line{margin-bottom:0;max-width:40px;}
+  .wizard-steps{margin-bottom:14px;}
+  .wizard-nav .btn{flex:1;min-width:0;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="globalLocalModeBanner" style="display:none;position:sticky;top:0;z-index:2000;background:#B3261E;color:#fff;text-align:center;padding:12px 16px;font-weight:800;font-size:.92rem;line-height:1.6;">
+  ⚠️ غير متصل بقاعدة بيانات مشتركة — التسجيلات تُحفظ حاليًا على هذا الجهاز فقط ولن تظهر في لوحة الإدارة من أي جهاز آخر. يجب ربط Supabase (راجع خطوات-التشغيل.md) قبل مشاركة رابط التسجيل مع أي شخص.
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-mark" id="courseLogoWrap">
+        <img src="assets/course-logo.png" alt="شعار دورة P3O® Foundation" id="courseLogo"
+             onerror="this.style.display='none'; document.getElementById('courseLogoFallback').style.display='flex';">
+        <span id="courseLogoFallback" class="brand-mark-fallback">P3O</span>
+      </div>
+      <div>
+        دورة P3O® Foundation
+        <small>برعاية TRACKFORD</small>
+      </div>
+    </div>
+
+    <div class="sponsor-badge">
+      <span>برعاية</span>
+      <img src="assets/trackford-logo.png" alt="TRACKFORD" id="trackfordLogo"
+           onerror="this.style.display='none'; document.getElementById('trackfordLogoFallback').style.display='inline';">
+      <strong id="trackfordLogoFallback" style="display:none;">TRACKFORD</strong>
+    </div>
+
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <a href="#register" class="header-cta">سجّل الآن مجانًا</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <span class="hero-eyebrow">دورة تدريبية مجانية · برعاية TRACKFORD</span>
+      <h1>دورة <span>P3O® Foundation</span><br>مع د. محمد عطية</h1>
+      <p class="lead">
+        أساسيات إدارة مكاتب المحافظ والبرامج والمشاريع (P3O®) في 4 أيام تدريبية مكثفة،
+        تقديم د. محمد عطية، والتسجيل مجاني بالكامل.
+      </p>
+
+      <div class="hero-badges">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          يبدأ 20 يوليو 2026
+        </span>
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          من 4 إلى 6 مساءً
+        </span>
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V6a2 2 0 012-2h10l4 4v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 10h8M8 14h5"/></svg>
+          4 أيام تدريبية
+        </span>
+        <span class="badge free">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg>
+          الدورة مجانية
+        </span>
+      </div>
+
+      <div class="seats-counter" id="seatsCounter">
+        <div class="seats-counter-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="seats-counter-text">
+          <strong id="seatsRemainingValue">300</strong> مقعدًا متبقيًا من أصل <span id="seatsTotalValue">300</span>
+          <div class="seats-progress"><div class="seats-progress-bar" id="seatsProgressBar"></div></div>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#register" class="btn btn-gold">
+          سجّل الآن
+        </a>
+        <a href="#details" class="btn btn-outline">تفاصيل الدورة</a>
+      </div>
+    </div>
+
+    <div class="poster-frame">
+      <span class="poster-ribbon">التسجيل مجاني</span>
+      <div class="poster-inner">
+        <img src="assets/poster.jpg" alt="بوستر دورة P3O® Foundation" id="posterImg"
+             onerror="this.style.display='none'; document.getElementById('posterFallback').style.display='flex';">
+        <div class="poster-fallback" id="posterFallback" style="display:none;flex-direction:column;align-items:center;justify-content:center;height:100%;">
+          <div class="p3o-mark">P3O®</div>
+          <div>FOUNDATION</div>
+          <small>TRACKFORD × د. محمد عطية</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="details">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">تفاصيل الدورة</span>
+      <h2 class="section-title">كل ما تحتاج معرفته قبل التسجيل</h2>
+      <p class="section-sub">دورة معتمدة في أساسيات P3O® يقدّمها د. محمد عطية برعاية TRACKFORD</p>
+    </div>
+    <div class="ornament">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 10l-5.5 4.8L18 22l-6-3.6L6 22l1.5-7.2L2 10l7.1-1.4z"/></svg>
+    </div>
+
+    <div class="details-grid">
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <h3>المحاضر</h3>
+        <p>د. محمد عطية</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>تاريخ البداية</h3>
+        <p>20 يوليو 2026</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V6a2 2 0 012-2h10l4 4v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 10h8M8 14h5"/></svg></div>
+        <h3>المدة</h3>
+        <p>4 أيام تدريبية</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>الوقت اليومي</h3>
+        <p>من 4 إلى 6 مساءً</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg></div>
+        <h3>الرسوم</h3>
+        <p>مجانية بالكامل</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7L9 18l-5-5"/></svg></div>
+        <h3>الجهة الراعية</h3>
+        <p>TRACKFORD</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="register" style="background:var(--white);">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">التسجيل</span>
+      <h2 class="section-title">نموذج التسجيل في الدورة</h2>
+      <p class="section-sub">يرجى تعبئة جميع الحقول بدقة، سيتم إرسال رقم التسجيل فور إتمام العملية</p>
+    </div>
+
+    <div class="form-wrap">
+      <form id="registrationForm" novalidate>
+
+        <!-- شريط الخطوات -->
+        <div class="wizard-steps" id="wizardSteps">
+          <div class="wizard-step active" data-step="1">
+            <span class="wizard-dot">1</span>
+            <span class="wizard-label">بياناتك الشخصية</span>
+          </div>
+          <div class="wizard-line"></div>
+          <div class="wizard-step" data-step="2">
+            <span class="wizard-dot">2</span>
+            <span class="wizard-label">بيانات العمل</span>
+          </div>
+          <div class="wizard-line"></div>
+          <div class="wizard-step" data-step="3">
+            <span class="wizard-dot">3</span>
+            <span class="wizard-label">المراجعة والتأكيد</span>
+          </div>
+        </div>
+        <div class="wizard-progress"><div class="wizard-progress-bar" id="wizardProgressBar"></div></div>
+
+        <!-- الخطوة 1: البيانات الشخصية -->
+        <div class="wizard-pane active" data-pane="1">
+          <h3 class="wizard-pane-title">أولًا: عرّفنا بنفسك</h3>
+          <div class="form-grid">
+            <div class="field full">
+              <label for="fullName">الاسم الرباعي <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="مثال: محمد أحمد علي حسن" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="email">البريد الإلكتروني <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="phone">رقم الجوال <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- الخطوة 2: بيانات العمل والموقع -->
+        <div class="wizard-pane" data-pane="2">
+          <h3 class="wizard-pane-title">ثانيًا: موقعك وجهة عملك</h3>
+          <div class="form-grid">
+            <div class="field">
+              <label for="country">الدولة <span class="req">*</span></label>
+              <input type="text" id="country" name="country" placeholder="السعودية" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="city">المدينة <span class="req">*</span></label>
+              <input type="text" id="city" name="city" placeholder="الرياض" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="organization">جهة العمل <span class="req">*</span></label>
+              <input type="text" id="organization" name="organization" placeholder="اسم الشركة / الجهة" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field">
+              <label for="jobTitle">المسمى الوظيفي <span class="req">*</span></label>
+              <input type="text" id="jobTitle" name="jobTitle" placeholder="مثال: مدير مشاريع" required>
+              <span class="error-msg"></span>
+            </div>
+            <div class="field full">
+              <label for="source">كيف عرفت عن الدورة؟ <span class="req">*</span></label>
+              <select id="source" name="source" required>
+                <option value="" disabled selected>اختر...</option>
+                <option value="لينكدإن">LinkedIn</option>
+                <option value="تويتر / X">Twitter / X</option>
+                <option value="واتساب">واتساب</option>
+                <option value="صديق / زميل">صديق أو زميل</option>
+                <option value="TRACKFORD">موقع أو قنوات TRACKFORD</option>
+                <option value="أخرى">أخرى</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- الخطوة 3: المراجعة والتأكيد -->
+        <div class="wizard-pane" data-pane="3">
+          <h3 class="wizard-pane-title">أخيرًا: راجع بياناتك ثم أكّد التسجيل</h3>
+          <div class="review-card">
+            <div class="review-row"><span>الاسم الرباعي</span><strong id="reviewName">-</strong></div>
+            <div class="review-row"><span>البريد الإلكتروني</span><strong id="reviewEmail">-</strong></div>
+            <div class="review-row"><span>رقم الجوال</span><strong id="reviewPhone">-</strong></div>
+            <div class="review-row"><span>الدولة / المدينة</span><strong id="reviewLocation">-</strong></div>
+            <div class="review-row"><span>جهة العمل</span><strong id="reviewOrg">-</strong></div>
+            <div class="review-row"><span>المسمى الوظيفي</span><strong id="reviewJob">-</strong></div>
+            <div class="review-row"><span>مصدر المعرفة</span><strong id="reviewSource">-</strong></div>
+          </div>
+          <p class="review-hint">إذا احتجت تعديل أي بيان اضغط "السابق" للرجوع للخطوة المطلوبة.</p>
+        </div>
+
+        <div class="form-alert" id="formAlert"></div>
+
+        <!-- أزرار التنقل بين الخطوات -->
+        <div class="wizard-nav">
+          <button type="button" class="btn btn-outline-purple" id="prevStepBtn" style="display:none;">السابق</button>
+          <button type="button" class="btn btn-gold" id="nextStepBtn">التالي</button>
+          <button type="submit" class="btn btn-gold form-submit" id="submitBtn" style="display:none;">
+            تأكيد التسجيل
+          </button>
+        </div>
+      </form>
+
+      <div class="success-card" id="successCard">
+        <div class="check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3>تم تسجيلك بنجاح!</h3>
+        <p>شكرًا لتسجيلك في دورة P3O® Foundation. احتفظ برقم التسجيل الخاص بك.</p>
+        <div class="reg-number" id="regNumberDisplay">P3O-2026-0000</div>
+        <p id="emailStatusMsg" style="font-size:.85rem;"></p>
+
+        <div class="whatsapp-join-card">
+          <p>خطوة أخيرة مهمة: انضم إلى جروب واتساب الدورة لاستلام رابط الحضور والتحديثات</p>
+          <a href="https://chat.whatsapp.com/GK3yhPDNASL60BgCybc7zW" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.15h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.43 12.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.82-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z"/></svg>
+            الانضمام لجروب واتساب الدورة
+          </a>
+        </div>
+
+        <div class="success-actions">
+          <button type="button" class="btn btn-outline-purple" id="addToCalendarBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            إضافة إلى Google Calendar
+          </button>
+          <button type="button" class="btn btn-outline-purple" id="printCertBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            طباعة إفادة التسجيل
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- قالب إفادة التسجيل القابل للطباعة (مخفي، يظهر عند الطباعة فقط) -->
+<div id="printCertificate" class="print-certificate">
+  <div class="cert-border">
+    <div class="cert-header">
+      <div class="cert-logo">P3O®</div>
+      <div>
+        <div class="cert-org">TRACKFORD</div>
+        <div class="cert-sub">إفادة تسجيل في دورة تدريبية</div>
+      </div>
+    </div>
+    <h1 class="cert-title">إفادة تسجيل</h1>
+    <p class="cert-body">
+      نُفيد بأن المتدرب/ة <strong id="certName">-</strong> مسجَّل/ة في دورة
+      <strong>P3O® Foundation</strong> برعاية <strong>TRACKFORD</strong>،
+      وتقديم <strong>د. محمد عطية</strong>.
+    </p>
+    <table class="cert-table">
+      <tr><td>رقم التسجيل</td><td id="certRegNumber">-</td></tr>
+      <tr><td>تاريخ بداية الدورة</td><td>20 يوليو 2026</td></tr>
+      <tr><td>المدة</td><td>4 أيام تدريبية</td></tr>
+      <tr><td>الوقت اليومي</td><td>من 4 إلى 6 مساءً</td></tr>
+      <tr><td>البريد الإلكتروني</td><td id="certEmail">-</td></tr>
+      <tr><td>تاريخ إصدار الإفادة</td><td id="certIssueDate">-</td></tr>
+    </table>
+    <p class="cert-footer">هذه الإفادة صادرة إلكترونيًا ولا تحتاج توقيعًا لإثبات التسجيل.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>دورة <strong>P3O® Foundation</strong> — برعاية <strong>TRACKFORD</strong> — تقديم د. محمد عطية</p>
+    <a href="#" onclick="openAdmin(event)" class="admin-link" title="دخول الإدارة" aria-label="دخول الإدارة المحمي">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="vertical-align:-2px;"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+      الإدارة
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+/* =====================================================================
+   ⚙️ الإعدادات — عدّل السطرين التاليين فقط بقيم مشروعك في Supabase
+   (Project Settings → API → Project URL و anon public key)
+   ===================================================================== */
+const SUPABASE_URL = "https://jrelwdrscelvhrtfuuib.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_DeiraxppW_sEww3UPPbyFw_Cc1Ah8BL";
+
+/* إعدادات بريد التأكيد EmailJS (اختيارية — اتركها فارغة إن لم تستخدمها) */
+const EMAILJS_PUBLIC_KEY = "";
+const EMAILJS_SERVICE_ID = "";
+const EMAILJS_TEMPLATE_ID = "";
+
+/* بيانات الدورة */
+const COURSE_INFO = {
+  title: "P3O® Foundation",
+  sponsor: "TRACKFORD",
+  instructor: "د. محمد عطية",
+  startDate: "20 يوليو 2026",
+  time: "من 4 إلى 6 مساءً",
+  year: "2026",
+  startDateISO: "2026-07-20",
+  startTimeISO: "16:00",
+  endTimeISO: "18:00",
+  durationDays: 4,
+  timezone: "Asia/Riyadh",
+};
+const SEATS_TOTAL = 300;
+
+/* كلمة مرور الإدارة عند التجربة المحلية فقط. غيّرها قبل مشاركة الملف. */
+const LOCAL_ADMIN_PASSWORD = "P3O@2026";
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------- تهيئة Supabase ----------
+  let sb = null;
+  const configured =
+    SUPABASE_URL.indexOf("YOUR-PROJECT") === -1 &&
+    SUPABASE_ANON_KEY.indexOf("YOUR-SUPABASE") === -1;
+  if (configured && window.supabase) {
+    sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  }
+  const globalBanner = document.getElementById("globalLocalModeBanner");
+  if (!sb && globalBanner) globalBanner.style.display = "block";
+
+  const emailReady = EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID;
+  if (emailReady && window.emailjs) {
+    try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch (e) {}
+  }
+
+  // ---------- وضع احتياطي محلي ----------
+  // يعمل تلقائيًا عندما لا تكون Supabase مربوطة، حتى لا تتوقف المنصة.
+  // ملاحظة: البيانات المحلية تظهر فقط على نفس المتصفح والجهاز.
+  const LOCAL_KEY = "trackford_p3o_registrations";
+  function getLocalRegs() {
+    try { return JSON.parse(localStorage.getItem(LOCAL_KEY) || "[]"); }
+    catch (e) { return []; }
+  }
+  function saveLocalRegs(rows) {
+    localStorage.setItem(LOCAL_KEY, JSON.stringify(rows));
+  }
+
+  // ---------- عناصر ----------
+  const form = document.getElementById("registrationForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const formAlert = document.getElementById("formAlert");
+  const successCard = document.getElementById("successCard");
+  const regNumberDisplay = document.getElementById("regNumberDisplay");
+  const emailStatusMsg = document.getElementById("emailStatusMsg");
+  const fields = {};
+  ["fullName","email","phone","country","city","organization","jobTitle","source"]
+    .forEach((k) => { fields[k] = document.getElementById(k); });
+
+  function showAlert(m, t) { formAlert.textContent = m; formAlert.className = "form-alert show " + (t || "error"); }
+  function hideAlert() { formAlert.className = "form-alert"; formAlert.textContent = ""; }
+  function setErr(input, msg) {
+    const f = input.closest(".field");
+    f.classList.toggle("has-error", !!msg);
+    const e = f.querySelector(".error-msg");
+    if (e) e.textContent = msg || "";
+  }
+  function clearErrs() { Object.values(fields).forEach((f) => setErr(f, "")); }
+  const okName  = (v) => v.trim().split(/\s+/).filter(Boolean).length >= 4;
+  const okEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
+  const okPhone = (v) => { const d = v.replace(/[^\d]/g, ""); return d.length >= 8 && d.length <= 15; };
+  const regNum  = (seq) => "P3O-" + (COURSE_INFO.year || "2026") + "-" + String(seq).padStart(4, "0");
+  const fmtDate = (d) => { try { return new Date(d).toLocaleString("ar-SA", { dateStyle: "medium", timeStyle: "short" }); } catch (e) { return ""; } };
+
+  // ---------- عداد المقاعد ----------
+  async function updateSeats() {
+    const t = document.getElementById("seatsTotalValue");
+    if (t) t.textContent = SEATS_TOTAL;
+    let taken = 0;
+    if (sb) {
+      try {
+        const { data, error } = await sb.rpc("get_registration_count");
+        if (!error && typeof data === "number") taken = data;
+      } catch (e) {}
+    } else {
+      taken = getLocalRegs().length;
+    }
+    const rem = Math.max(SEATS_TOTAL - taken, 0);
+    const el = document.getElementById("seatsRemainingValue");
+    if (el) el.textContent = rem;
+    const bar = document.getElementById("seatsProgressBar");
+    if (bar) bar.style.width = Math.min((taken / SEATS_TOTAL) * 100, 100) + "%";
+  }
+  updateSeats();
+
+  // ---------- معالج الخطوات ----------
+  const TOTAL = 3;
+  let cur = 1;
+  const prevBtn = document.getElementById("prevStepBtn");
+  const nextBtn = document.getElementById("nextStepBtn");
+  const pbar = document.getElementById("wizardProgressBar");
+  const stepFields = { 1: ["fullName","email","phone"], 2: ["country","city","organization","jobTitle","source"] };
+
+  function validateStep(s) {
+    clearErrs();
+    let ok = true;
+    (stepFields[s] || []).forEach((k) => {
+      const i = fields[k];
+      if (k === "fullName" && !okName(i.value)) { setErr(i, "الرجاء إدخال الاسم الرباعي كاملًا"); ok = false; }
+      else if (k === "email" && !okEmail(i.value)) { setErr(i, "الرجاء إدخال بريد إلكتروني صحيح"); ok = false; }
+      else if (k === "phone" && !okPhone(i.value)) { setErr(i, "الرجاء إدخال رقم جوال صحيح"); ok = false; }
+      else if (k === "source" && !i.value) { setErr(i, "الرجاء اختيار إجابة"); ok = false; }
+      else if (["country","city","organization","jobTitle"].indexOf(k) > -1 && !i.value.trim()) { setErr(i, "هذا الحقل مطلوب"); ok = false; }
+    });
+    return ok;
+  }
+
+  function review() {
+    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v || "-"; };
+    set("reviewName", fields.fullName.value.trim());
+    set("reviewEmail", fields.email.value.trim());
+    set("reviewPhone", fields.phone.value.trim());
+    set("reviewLocation", fields.country.value.trim() + " / " + fields.city.value.trim());
+    set("reviewOrg", fields.organization.value.trim());
+    set("reviewJob", fields.jobTitle.value.trim());
+    set("reviewSource", fields.source.value);
+  }
+
+  function goTo(s) {
+    cur = s;
+    hideAlert();
+    document.querySelectorAll(".wizard-pane").forEach((p) => p.classList.toggle("active", Number(p.dataset.pane) === s));
+    document.querySelectorAll(".wizard-step").forEach((st) => {
+      const n = Number(st.dataset.step);
+      st.classList.toggle("active", n === s);
+      st.classList.toggle("done", n < s);
+    });
+    if (pbar) pbar.style.width = ((s - 1) / (TOTAL - 1)) * 100 + "%";
+    prevBtn.style.display = s > 1 ? "inline-flex" : "none";
+    nextBtn.style.display = s < TOTAL ? "inline-flex" : "none";
+    submitBtn.style.display = s === TOTAL ? "inline-flex" : "none";
+    if (s === TOTAL) review();
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  nextBtn.addEventListener("click", () => {
+    if (!validateStep(cur)) { showAlert("الرجاء تصحيح الحقول المميزة قبل المتابعة", "error"); return; }
+    goTo(Math.min(cur + 1, TOTAL));
+  });
+  prevBtn.addEventListener("click", () => goTo(Math.max(cur - 1, 1)));
+  form.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && cur < TOTAL) { e.preventDefault(); nextBtn.click(); }
+  });
+  goTo(1);
+
+  // ---------- Google Calendar + طباعة الإفادة ----------
+  const pad2 = (n) => String(n).padStart(2, "0");
+  const calBtn = document.getElementById("addToCalendarBtn");
+  if (calBtn) calBtn.addEventListener("click", () => {
+    const [y, m, d] = COURSE_INFO.startDateISO.split("-").map(Number);
+    const [sh, sm] = COURSE_INFO.startTimeISO.split(":").map(Number);
+    const [eh, em] = COURSE_INFO.endTimeISO.split(":").map(Number);
+    const p = new URLSearchParams({
+      action: "TEMPLATE",
+      text: COURSE_INFO.title + " — " + COURSE_INFO.sponsor,
+      dates: `${y}${pad2(m)}${pad2(d)}T${pad2(sh)}${pad2(sm)}00/${y}${pad2(m)}${pad2(d)}T${pad2(eh)}${pad2(em)}00`,
+      details: "دورة " + COURSE_INFO.title + " برعاية " + COURSE_INFO.sponsor + "، تقديم " + COURSE_INFO.instructor + ".",
+      ctz: COURSE_INFO.timezone,
+      recur: "RRULE:FREQ=DAILY;COUNT=" + COURSE_INFO.durationDays,
+    });
+    window.open("https://calendar.google.com/calendar/render?" + p.toString(), "_blank", "noopener");
+  });
+  const prBtn = document.getElementById("printCertBtn");
+  if (prBtn) prBtn.addEventListener("click", () => window.print());
+
+  function fillCert(reg) {
+    const cn = document.getElementById("certName");
+    if (!cn) return;
+    cn.textContent = reg.fullName;
+    document.getElementById("certRegNumber").textContent = reg.regNumber;
+    document.getElementById("certEmail").textContent = reg.email;
+    document.getElementById("certIssueDate").textContent =
+      new Date().toLocaleDateString("ar-SA", { year: "numeric", month: "long", day: "numeric" });
+  }
+
+  const isDup = (err) =>
+    err && (err.code === "23505" ||
+      /duplicate|unique/i.test(err.message || "") ||
+      /duplicate|unique/i.test(err.details || ""));
+
+  // ---------- إرسال بريد التأكيد ----------
+  async function sendEmail(data, num) {
+    if (!emailReady || !window.emailjs) return { sent: false };
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        to_email: data.email, to_name: data.fullName, registration_number: num,
+        course_title: COURSE_INFO.title, course_start: COURSE_INFO.startDate,
+        course_time: COURSE_INFO.time, instructor: COURSE_INFO.instructor,
+      });
+      return { sent: true };
+    } catch (e) { return { sent: false }; }
+  }
+
+  // ---------- التسجيل ----------
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    hideAlert();
+
+    if (!validateStep(1) || !validateStep(2)) {
+      showAlert("الرجاء مراجعة البيانات — هناك حقول غير مكتملة", "error");
+      goTo(!validateStep(1) ? 1 : 2);
+      return;
+    }
+    const useLocalMode = !sb;
+
+    const payload = {
+      full_name: fields.fullName.value.trim(),
+      email: fields.email.value.trim().toLowerCase(),
+      phone: fields.phone.value.trim().replace(/[\s\-().]/g, ""),
+      country: fields.country.value.trim(),
+      city: fields.city.value.trim(),
+      organization: fields.organization.value.trim(),
+      job_title: fields.jobTitle.value.trim(),
+      source: fields.source.value,
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "جاري التسجيل...";
+
+    try {
+      let seq = null;
+
+      if (useLocalMode) {
+        const localRows = getLocalRegs();
+        const duplicate = localRows.some((r) =>
+          String(r.email || "").toLowerCase() === payload.email ||
+          String(r.phone || "") === payload.phone
+        );
+        if (duplicate) {
+          showAlert("هذا البريد الإلكتروني أو رقم الجوال مسجل مسبقًا في الدورة.", "error");
+          submitBtn.disabled = false; submitBtn.textContent = "تأكيد التسجيل";
+          return;
+        }
+        seq = localRows.length ? Math.max(...localRows.map((r) => Number(r.reg_seq) || 0)) + 1 : 1;
+        localRows.push({
+          ...payload,
+          reg_seq: seq,
+          created_at: new Date().toISOString()
+        });
+        saveLocalRegs(localRows);
+      } else {
+        const { data, error } = await sb.rpc("register_trainee", {
+          p_full_name: payload.full_name, p_email: payload.email, p_phone: payload.phone,
+          p_country: payload.country, p_city: payload.city, p_organization: payload.organization,
+          p_job_title: payload.job_title, p_source: payload.source,
+        });
+
+        if (!error && (typeof data === "number" || typeof data === "string")) {
+          seq = Number(data);
+        } else if (error && isDup(error)) {
+          showAlert("هذا البريد الإلكتروني أو رقم الجوال مسجل مسبقًا في الدورة.", "error");
+          submitBtn.disabled = false; submitBtn.textContent = "تأكيد التسجيل";
+          return;
+        } else if (error) {
+          const { error: insErr } = await sb.from("registrations").insert(payload);
+          if (insErr) {
+            showAlert(isDup(insErr)
+              ? "هذا البريد الإلكتروني أو رقم الجوال مسجل مسبقًا في الدورة."
+              : "حدث خطأ أثناء التسجيل، الرجاء المحاولة مرة أخرى.", "error");
+            submitBtn.disabled = false; submitBtn.textContent = "تأكيد التسجيل";
+            return;
+          }
+          try {
+            const { data: c } = await sb.rpc("get_registration_count");
+            if (typeof c === "number") seq = c;
+          } catch (e2) {}
+        }
+      }
+
+      const num = seq !== null ? regNum(seq) : "P3O-" + COURSE_INFO.year + "-مؤكد";
+      const reg = { fullName: payload.full_name, email: payload.email, regNumber: num };
+
+      form.style.display = "none";
+      regNumberDisplay.textContent = num;
+      successCard.classList.add("show");
+      successCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      emailStatusMsg.textContent = "";
+      fillCert(reg);
+      updateSeats();
+
+      if (useLocalMode) {
+        emailStatusMsg.textContent = "تم التسجيل بنجاح في الوضع المحلي. اربط Supabase لاحقًا لتجميع تسجيلات جميع المتدربين في قاعدة واحدة.";
+      } else if (emailReady) {
+        const r = await sendEmail(reg, num);
+        emailStatusMsg.textContent = r.sent
+          ? "تم إرسال رسالة تأكيد إلى بريدك الإلكتروني."
+          : "تم التسجيل بنجاح، لكن تعذّر إرسال بريد التأكيد.";
+      }
+    } catch (err) {
+      console.error(err);
+      showAlert("حدث خطأ غير متوقع، الرجاء المحاولة مرة أخرى.", "error");
+      submitBtn.disabled = false;
+      submitBtn.textContent = "تأكيد التسجيل";
+    }
+  });
+
+  /* =====================================================================
+     لوحة الإدارة — دخول حقيقي عبر Supabase Auth
+     ===================================================================== */
+  let allRegs = [];
+
+  window.openAdmin = async function (e) {
+    if (e) e.preventDefault();
+    document.getElementById("adminOverlay").style.display = "block";
+    document.body.style.overflow = "hidden";
+    if (!sb) {
+      adminLoginMsg("الوضع المحلي مفعّل. أدخل كلمة مرور الإدارة لعرض التسجيلات المحفوظة على هذا الجهاز.", false);
+      return;
+    }
+    // استئناف جلسة قائمة إن وجدت
+    try {
+      const { data } = await sb.auth.getSession();
+      if (data && data.session) await enterDash();
+    } catch (e2) {}
+  };
+  window.closeAdmin = function () {
+    document.getElementById("adminOverlay").style.display = "none";
+    document.body.style.overflow = "";
+  };
+  window.adminLogout = async function () {
+    if (sb) await sb.auth.signOut();
+    document.getElementById("adminDash").style.display = "none";
+    document.getElementById("adminLogin").style.display = "block";
+    closeAdmin();
+  };
+
+  function adminLoginMsg(msg, isErr) {
+    const al = document.getElementById("adminLoginAlert");
+    al.className = "form-alert show " + (isErr ? "error" : "success");
+    al.textContent = msg;
+  }
+
+  window.adminSignIn = async function () {
+    if (!sb) {
+      const pass = document.getElementById("adminPass").value;
+      if (pass !== LOCAL_ADMIN_PASSWORD) {
+        adminLoginMsg("كلمة مرور الإدارة غير صحيحة.", true);
+        return;
+      }
+      adminLoginMsg("تم تسجيل الدخول بنجاح.", false);
+      await enterDash();
+      return;
+    }
+    const email = document.getElementById("adminEmail").value.trim();
+    const pass = document.getElementById("adminPass").value;
+    const btn = document.getElementById("adminLoginBtn");
+    btn.disabled = true; btn.textContent = "جاري الدخول...";
+    const { error } = await sb.auth.signInWithPassword({ email: email, password: pass });
+    btn.disabled = false; btn.textContent = "تسجيل الدخول";
+    if (error) { adminLoginMsg("بيانات الدخول غير صحيحة، الرجاء المحاولة مرة أخرى.", true); return; }
+    await enterDash();
+  };
+
+  async function enterDash() {
+    document.getElementById("adminLogin").style.display = "none";
+    document.getElementById("adminDash").style.display = "block";
+    const note = document.getElementById("localModeAdminNote");
+    if (note) note.style.display = sb ? "none" : "block";
+    await loadRegs();
+  }
+
+  window.loadRegs = async function () {
+    const tb = document.getElementById("adminTbody");
+    const empty = document.getElementById("adminEmpty");
+    tb.innerHTML = "";
+    empty.style.display = "none";
+    empty.textContent = "جاري التحميل...";
+    empty.style.display = "block";
+
+    if (!sb) {
+      allRegs = getLocalRegs().slice().sort((a,b) => (Number(b.reg_seq)||0) - (Number(a.reg_seq)||0));
+      empty.style.display = "none";
+      renderAdmin();
+      return;
+    }
+
+    const { data, error } = await sb.from("registrations").select("*").order("reg_seq", { ascending: false });
+
+    if (error) {
+      if (error.status === 401 || error.code === "PGRST301") { await adminLogout(); return; }
+      empty.textContent = "تعذّر تحميل البيانات — تأكد من تشغيل ملف supabase-setup.sql.";
+      return;
+    }
+    empty.style.display = "none";
+    allRegs = data || [];
+    renderAdmin();
+  };
+
+  function filteredRegs() {
+    const q = (document.getElementById("adminSearch").value || "").trim().toLowerCase();
+    if (!q) return allRegs;
+    return allRegs.filter((r) =>
+      [r.full_name, r.email, r.phone, r.country, r.city, r.organization, r.job_title, r.source]
+        .filter(Boolean)
+        .some((v) => String(v).toLowerCase().indexOf(q) > -1)
+    );
+  }
+
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  window.renderAdmin = function () {
+    const rows = filteredRegs();
+    const tb = document.getElementById("adminTbody");
+    const empty = document.getElementById("adminEmpty");
+    tb.innerHTML = "";
+    if (!rows.length) { empty.style.display = "block"; empty.textContent = "لا توجد نتائج مطابقة"; }
+    else empty.style.display = "none";
+
+    const frag = document.createDocumentFragment();
+    rows.forEach((r, i) => {
+      const tr = document.createElement("tr");
+      tr.style.borderBottom = "1px solid #EFE7FA";
+      tr.innerHTML =
+        "<td style='padding:9px;text-align:center;'>" + (i + 1) + "</td>" +
+        "<td>" + regNum(r.reg_seq) + "</td>" +
+        "<td>" + esc(r.full_name) + "</td>" +
+        "<td dir='ltr'>" + esc(r.email) + "</td>" +
+        "<td dir='ltr'>" + esc(r.phone) + "</td>" +
+        "<td>" + esc(r.country) + "</td>" +
+        "<td>" + esc(r.city) + "</td>" +
+        "<td>" + esc(r.organization) + "</td>" +
+        "<td>" + esc(r.job_title) + "</td>" +
+        "<td>" + esc(r.source) + "</td>" +
+        "<td>" + fmtDate(r.created_at) + "</td>";
+      frag.appendChild(tr);
+    });
+    tb.appendChild(frag);
+
+    document.getElementById("adminCount").textContent = rows.length + " مسجل";
+    document.getElementById("dStatTotal").textContent = allRegs.length;
+    const today = new Date().toDateString();
+    document.getElementById("dStatToday").textContent =
+      allRegs.filter((r) => { try { return new Date(r.created_at).toDateString() === today; } catch (e) { return false; } }).length;
+    const cs = new Set(allRegs.map((r) => (r.country || "").trim().toLowerCase()).filter(Boolean));
+    document.getElementById("dStatCountries").textContent = cs.size;
+  };
+
+  const HEADERS = ["رقم التسجيل","الاسم الرباعي","البريد الإلكتروني","رقم الجوال","الدولة","المدينة","جهة العمل","المسمى الوظيفي","مصدر المعرفة","تاريخ التسجيل"];
+  const rowVals = (r) => [regNum(r.reg_seq), r.full_name, r.email, r.phone, r.country, r.city, r.organization, r.job_title, r.source, fmtDate(r.created_at)];
+
+  window.exportCsv = function () {
+    const rows = filteredRegs();
+    if (!rows.length) return;
+    const lines = [HEADERS.join(",")];
+    rows.forEach((r) => {
+      lines.push(rowVals(r).map((v) => '"' + String(v || "").replace(/"/g, '""') + '"').join(","));
+    });
+    const blob = new Blob(["\uFEFF" + lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "p3o-registrations-" + new Date().toISOString().slice(0, 10) + ".csv";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  window.exportXlsx = function () {
+    if (!window.XLSX) { alert("تعذّر تحميل مكتبة Excel — تأكد من الاتصال بالإنترنت."); return; }
+    const rows = filteredRegs();
+    if (!rows.length) return;
+    const sheetData = rows.map((r) => {
+      const o = {};
+      const vals = rowVals(r);
+      HEADERS.forEach((h, i) => { o[h] = vals[i]; });
+      return o;
+    });
+    const ws = XLSX.utils.json_to_sheet(sheetData);
+    ws["!cols"] = [{wch:16},{wch:24},{wch:26},{wch:16},{wch:14},{wch:14},{wch:22},{wch:20},{wch:18},{wch:20}];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "المسجلون");
+    XLSX.writeFile(wb, "p3o-registrations-" + new Date().toISOString().slice(0, 10) + ".xlsx");
+  };
+})();
+</script>
+
+
+<!-- ===== لوحة الإدارة (مدمجة — دخول حقيقي عبر Supabase Auth) ===== -->
+<div id="adminOverlay" style="display:none;position:fixed;inset:0;background:rgba(29,16,41,.55);backdrop-filter:blur(3px);z-index:1000;overflow:auto;">
+  <div style="min-height:100%;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px;">
+    <div style="background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);width:100%;max-width:1150px;overflow:hidden;">
+
+      <!-- شاشة الدخول -->
+      <div id="adminLogin" style="padding:44px 28px;max-width:420px;margin:0 auto;text-align:center;">
+        <div style="width:56px;height:56px;border-radius:50%;background:var(--purple-soft);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" width="26" height="26"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+        </div>
+        <h2 style="font-family:var(--font-display);color:var(--purple-deep);margin:0 0 4px;">لوحة الإدارة</h2>
+        <p style="color:var(--ink-soft);font-size:.85rem;margin:0 0 18px;">P3O® Foundation — TRACKFORD</p>
+        <div class="field" style="margin:0 0 14px;text-align:right;">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="adminEmail" placeholder="admin@example.com" dir="ltr" autocomplete="username">
+        </div>
+        <div class="field" style="margin-bottom:14px;text-align:right;">
+          <label>كلمة المرور</label>
+          <input type="password" id="adminPass" placeholder="••••••••" autocomplete="current-password"
+                 onkeydown="if(event.key==='Enter')adminSignIn()">
+        </div>
+        <div class="form-alert" id="adminLoginAlert"></div>
+        <button class="btn btn-gold" style="width:100%;justify-content:center;" id="adminLoginBtn" onclick="adminSignIn()">تسجيل الدخول</button>
+        <button class="btn btn-outline-purple" style="width:100%;justify-content:center;margin-top:10px;" onclick="closeAdmin()">رجوع لصفحة التسجيل</button>
+      </div>
+
+      <!-- الداشبورد -->
+      <div id="adminDash" style="display:none;">
+        <div style="background:var(--purple-deep);color:#fff;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <strong style="font-family:var(--font-display);">لوحة الإدارة — المسجلون في الدورة</strong>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-outline" style="padding:8px 16px;font-size:.8rem;" onclick="loadRegs()">تحديث</button>
+            <button class="btn btn-outline" style="padding:8px 16px;font-size:.8rem;" onclick="adminLogout()">تسجيل الخروج</button>
+          </div>
+        </div>
+        <div style="padding:20px 22px;">
+          <div id="localModeAdminNote" style="display:none;background:#FFF4DE;color:#8A5A00;padding:12px 14px;border-radius:10px;margin-bottom:14px;font-weight:700;">
+            الوضع المحلي: هذه البيانات محفوظة على هذا الجهاز فقط. لعرض تسجيلات جميع المتدربين اربط Supabase.
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px;">
+            <div style="background:var(--cream);border-radius:12px;padding:14px;text-align:center;">
+              <div id="dStatTotal" style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:var(--purple-deep);">0</div>
+              <div style="font-size:.78rem;color:var(--ink-soft);">إجمالي المسجلين</div>
+            </div>
+            <div style="background:var(--cream);border-radius:12px;padding:14px;text-align:center;">
+              <div id="dStatToday" style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:var(--purple-deep);">0</div>
+              <div style="font-size:.78rem;color:var(--ink-soft);">تسجيلات اليوم</div>
+            </div>
+            <div style="background:var(--cream);border-radius:12px;padding:14px;text-align:center;">
+              <div id="dStatCountries" style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:var(--purple-deep);">0</div>
+              <div style="font-size:.78rem;color:var(--ink-soft);">عدد الدول</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center;">
+            <input type="text" id="adminSearch" placeholder="ابحث بالاسم، البريد، الجوال، المدينة، جهة العمل..." oninput="renderAdmin()"
+                   style="flex:1;min-width:220px;padding:11px 14px;border:1.5px solid var(--purple-soft);border-radius:12px;font-family:var(--font-body);font-size:.9rem;">
+            <span id="adminCount" style="background:var(--purple-soft);color:var(--purple-deep);border-radius:999px;padding:8px 16px;font-size:.8rem;font-weight:700;">0 مسجل</span>
+            <button class="btn btn-gold" style="padding:10px 18px;font-size:.82rem;" onclick="exportCsv()">تصدير CSV</button>
+            <button class="btn btn-outline-purple" style="padding:10px 18px;font-size:.82rem;" onclick="exportXlsx()">تصدير Excel</button>
+          </div>
+          <div style="overflow:auto;border:1px solid var(--purple-soft);border-radius:12px;">
+            <table style="width:100%;border-collapse:collapse;font-size:.83rem;min-width:950px;">
+              <thead>
+                <tr style="background:var(--purple-soft);color:var(--purple-deep);">
+                  <th style="padding:10px;">#</th><th>رقم التسجيل</th><th>الاسم الرباعي</th><th>البريد</th><th>الجوال</th>
+                  <th>الدولة</th><th>المدينة</th><th>جهة العمل</th><th>المسمى</th><th>المصدر</th><th>التاريخ</th>
+                </tr>
+              </thead>
+              <tbody id="adminTbody"></tbody>
+            </table>
+            <div id="adminEmpty" style="display:none;padding:24px;text-align:center;color:var(--ink-soft);font-size:.9rem;">جاري التحميل...</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
